@@ -1,0 +1,6 @@
+framework module Pods_APIFIX {
+  umbrella header "Pods-APIFIX-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,14 +7,20 @@
 //
 
 import UIKit
-
+import CoreLocation
+var amountString : String?
+let cost = NSUserDefaults.standardUserDefaults()
+let locationManager = CLLocationManager()
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate{
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+       
+        
+        APIManager.sharedInstance.xeCurrencyConvert( "USD", to: "CAD", amount: 1000.00)
         // Override point for customization after application launch.
         return true
     }
