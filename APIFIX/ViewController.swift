@@ -9,20 +9,20 @@
 import UIKit
 import CoreLocation
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
- let locationManager = CLLocationManager()
+class ViewController: UIViewController{
+ 
+
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
   
-
-       
+        LocationManager.sharedInstance.initLocation()
+       TaxManager.sharedInstance.taxCalc("V5K0A1", country: "CA", city: "Vancouver")
        
     }
   
-
-
-  
-
-
+    
 }
+
 

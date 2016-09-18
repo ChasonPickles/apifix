@@ -17,6 +17,9 @@
 		736233221D8DD13D0041286B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736233211D8DD13D0041286B /* APIManager.swift */; };
 		736233241D8DD1620041286B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 736233231D8DD1620041286B /* Podfile */; };
 		736233261D8DED220041286B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 736233251D8DED220041286B /* CoreLocation.framework */; };
+		736233281D8E46380041286B /* TaxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736233271D8E46380041286B /* TaxManager.swift */; };
+		7362332A1D8E465E0041286B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736233291D8E465E0041286B /* LocationManager.swift */; };
+		7362332C1D8E49410041286B /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 7362332B1D8E49410041286B /* cities.json */; };
 		BC6A72186FF8BEC1FF5E22F0 /* Pods_APIFIX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45395487A79228F52B85844C /* Pods_APIFIX.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +59,9 @@
 		736233211D8DD13D0041286B /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		736233231D8DD1620041286B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		736233251D8DED220041286B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		736233271D8E46380041286B /* TaxManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxManager.swift; sourceTree = "<group>"; };
+		736233291D8E465E0041286B /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		7362332B1D8E49410041286B /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
 		8CF1634C567A10A277EA2C40 /* Pods-APIFIX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APIFIX.release.xcconfig"; path = "Pods/Target Support Files/Pods-APIFIX/Pods-APIFIX.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,9 +120,12 @@
 			children = (
 				736232F31D8DD12C0041286B /* AppDelegate.swift */,
 				736233211D8DD13D0041286B /* APIManager.swift */,
+				736233271D8E46380041286B /* TaxManager.swift */,
+				736233291D8E465E0041286B /* LocationManager.swift */,
 				736232F51D8DD12C0041286B /* ViewController.swift */,
 				736232F71D8DD12C0041286B /* Main.storyboard */,
 				736232FA1D8DD12C0041286B /* Assets.xcassets */,
+				7362332B1D8E49410041286B /* cities.json */,
 				736232FC1D8DD12C0041286B /* LaunchScreen.storyboard */,
 				736232FF1D8DD12C0041286B /* Info.plist */,
 			);
@@ -230,6 +239,7 @@
 				TargetAttributes = {
 					736232EF1D8DD12C0041286B = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = FRPZD9YD3Q;
 					};
 					736233031D8DD12C0041286B = {
 						CreatedOnToolsVersion = 7.3;
@@ -267,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				736232FE1D8DD12C0041286B /* LaunchScreen.storyboard in Resources */,
+				7362332C1D8E49410041286B /* cities.json in Resources */,
 				736232FB1D8DD12C0041286B /* Assets.xcassets in Resources */,
 				736233241D8DD1620041286B /* Podfile in Resources */,
 				736232F91D8DD12C0041286B /* Main.storyboard in Resources */,
@@ -344,7 +355,9 @@
 			files = (
 				736233221D8DD13D0041286B /* APIManager.swift in Sources */,
 				736232F61D8DD12C0041286B /* ViewController.swift in Sources */,
+				7362332A1D8E465E0041286B /* LocationManager.swift in Sources */,
 				736232F41D8DD12C0041286B /* AppDelegate.swift in Sources */,
+				736233281D8E46380041286B /* TaxManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,10 +502,13 @@
 			baseConfigurationReference = 2C5521965EB1A14DE82137AD /* Pods-APIFIX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = APIFIX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harshbindra.APIFIX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -501,10 +517,13 @@
 			baseConfigurationReference = 8CF1634C567A10A277EA2C40 /* Pods-APIFIX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = APIFIX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harshbindra.APIFIX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
