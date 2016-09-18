@@ -11,6 +11,7 @@
 		734FB64F1D8E100400647C8E /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734FB64E1D8E100400647C8E /* CurrencyViewController.swift */; };
 		734FB6511D8E10F100647C8E /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734FB6501D8E10F100647C8E /* CountryViewController.swift */; };
 		734FB6531D8E50BB00647C8E /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734FB6521D8E50BB00647C8E /* ResultsViewController.swift */; };
+		734FB6551D8E5F9A00647C8E /* openingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734FB6541D8E5F9A00647C8E /* openingView.swift */; };
 		736232F41D8DD12C0041286B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736232F31D8DD12C0041286B /* AppDelegate.swift */; };
 		736232F61D8DD12C0041286B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736232F51D8DD12C0041286B /* ViewController.swift */; };
 		736232F91D8DD12C0041286B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 736232F71D8DD12C0041286B /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		734FB64E1D8E100400647C8E /* CurrencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
 		734FB6501D8E10F100647C8E /* CountryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
 		734FB6521D8E50BB00647C8E /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		734FB6541D8E5F9A00647C8E /* openingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = openingView.swift; sourceTree = "<group>"; };
 		736232F01D8DD12C0041286B /* APIFIX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APIFIX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		736232F31D8DD12C0041286B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		736232F51D8DD12C0041286B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				736233211D8DD13D0041286B /* APIManager.swift */,
 				736232F51D8DD12C0041286B /* ViewController.swift */,
 				736232F71D8DD12C0041286B /* Main.storyboard */,
+				734FB6541D8E5F9A00647C8E /* openingView.swift */,
 				734FB6521D8E50BB00647C8E /* ResultsViewController.swift */,
 				734FB6501D8E10F100647C8E /* CountryViewController.swift */,
 				736232FA1D8DD12C0041286B /* Assets.xcassets */,
@@ -362,6 +365,7 @@
 				734FB6511D8E10F100647C8E /* CountryViewController.swift in Sources */,
 				736232F41D8DD12C0041286B /* AppDelegate.swift in Sources */,
 				734FB64F1D8E100400647C8E /* CurrencyViewController.swift in Sources */,
+				734FB6551D8E5F9A00647C8E /* openingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
