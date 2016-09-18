@@ -12,6 +12,9 @@ var currencySelectedUSD = false;
 var currencySelectedCAU = false;
 
 class CurrencyViewController: UIViewController {
+    @IBAction func goBack(sender: AnyObject) {
+        self.performSegueWithIdentifier("backToProduct", sender: self)
+    }
     @IBAction func selectCurrencyCAU(sender: AnyObject) {
         self.performSegueWithIdentifier("showResults", sender: self)
         currencySelectedCAU = true;

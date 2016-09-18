@@ -14,6 +14,10 @@ var ipodNanoSelected = false;
 var priceOfProduct = 7;
 
 class ProductViewController: UIViewController {
+    @IBAction func goBack(sender: AnyObject) {
+        self.performSegueWithIdentifier("backToCountry", sender: self)
+    }
+    
     @IBAction func selectIPod(sender: AnyObject) {
         self.performSegueWithIdentifier("showCurrency", sender: self)
         ipodNanoSelected = true;
